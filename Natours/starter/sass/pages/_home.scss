@@ -17,7 +17,8 @@
 
   // 위로 살짝 비틀고, 바로 밑에 children 은 다시 윈래대로
   transform: skewY(-7deg);
-  & > * {  // .section-features > *
+  // .section-features > *
+  & > * {
     transform: skewY(7deg);
   }
 }
@@ -26,4 +27,9 @@
   background-color: $color-grey-light-1;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem;
+}
+
+.section-stories {
+  padding: 15rem 0 15rem 0;
+  background-color: $color-grey-light-1;
 }
