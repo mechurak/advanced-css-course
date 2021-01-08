@@ -36,6 +36,16 @@
     }
   }
 
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      // .btn--white::after
+      background-color: $color-primary;
+    }
+  }
+
   /* pseudo element. btn의 child 로 간주됨 */
   &::after {
     content: "";
