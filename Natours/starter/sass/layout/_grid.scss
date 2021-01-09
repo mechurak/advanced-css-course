@@ -13,6 +13,7 @@
 
   @include respond(tab-port) {
     max-width: 50rem;
+    padding: 0 3rem;
   }
 
   @include clearfix; // 공간 채워주는 용도(?)
