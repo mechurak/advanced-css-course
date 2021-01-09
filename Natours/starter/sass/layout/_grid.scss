@@ -5,6 +5,14 @@
   &:not(:last-child) {
     // 마지막 child 아닌 애들만
     margin-bottom: $gutter-vertial;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertial-small;
+    }
+  }
+
+  @include respond(tab-port) {
+    max-width: 50rem;
   }
 
   @include clearfix; // 공간 채워주는 용도(?)
@@ -15,6 +23,15 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertial-small;
+      }
+    }
+
+    @include respond(tab-port) {
+      width: 100% !important;
     }
   }
 
