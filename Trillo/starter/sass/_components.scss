@@ -235,12 +235,28 @@
   }
 
   &__rating {
+    background-color: var(--color-primary);
+    color: #fff;
+    margin-left: 3rem;
+    padding: 0 2.25rem;
+    align-self: stretch; // cross 공간 꽉 채우기 위함.
+
+    // 자식들 가운데 정렬
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   &__rating-average {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: -3px;
   }
 
   &__rating-count {
+    font-size: 0.8rem;
+    text-transform: uppercase;
   }
 }
 
