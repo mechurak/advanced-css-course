@@ -13,6 +13,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden; // 이미지가 라운드 밖에 나가는거 방지
