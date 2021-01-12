@@ -7,5 +7,26 @@
   &__content {
     background-color: $color-grey-light-1;
     grid-column: col-start 5 / full-end;
+
+    padding: 6rem 6vw;
+
+    // flexbox 이용해서 가운데로
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: center; // 메인축 기준 (여기선 세로)
+    align-items: start;  // 크로스축 (여기선 가로)
+    */
+
+    // grid 로 가운데로
+    display: grid;
+    align-content: center; // column축 센터
+    justify-items: start;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 4rem;
   }
 }
