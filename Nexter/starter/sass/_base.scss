@@ -18,6 +18,7 @@ $font-display: "Josefin Sans", sans-serif;
 $bp-largest: 75em; // 1200px (1200/16 = 75)
 $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
 
 *,
 *::before,
@@ -60,6 +61,6 @@ body {
   }
 
   @media only screen and (max-width: $bp-medium) {
-    grid-template-rows: 6rem calc(100vh - 6rem);  // 나머지는 min-content
+    grid-template-rows: 6rem calc(100vh - 6rem); // 나머지는 min-content
   }
 }
