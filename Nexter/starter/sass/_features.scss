@@ -4,14 +4,26 @@
 
   margin: 15rem 0;
 
-  display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  // 25rem 으로 채울수 있는 만큼 열을 만듬
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 6rem;
+  // grid 를 못 쓰는 브라우저 고려. 지금은 다 될 듯.
+  @supports (display: grid) {
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // 25rem 으로 채울수 있는 만큼 열을 만듬
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+  }
 }
 
 .feature {
+  float: left;
+  width: 33.3333%;
+  margin-bottom: 6rem;
+
+  @supports (display: grid) {
+    width: auto;
+    margin-bottom: 0;
+  }
+
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-row-gap: 1.5rem;
